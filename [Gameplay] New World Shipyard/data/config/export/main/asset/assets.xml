@@ -1,0 +1,215 @@
+<ModOps>
+  <!-- NW Unlock -->
+  <ModOp Type="addNextSibling" GUID='130241'>
+    <!-- UL 2001000001 -    1 Obrero  // TRG GUID 2001000002 -->
+    <Asset>
+        <Template>Trigger</Template>
+        <Values>
+            <Standard>
+                <GUID>2001000002</GUID>
+                <Name>New_World_Shipyard</Name>
+                <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>15000006</Context>
+                            <CounterAmount>1</CounterAmount>
+                        </ConditionPlayerCounter>
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>2001000001</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                    <UnhideAssets />
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup />
+        </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Harbor category (After tourism pier) -->
+  <ModOp Type="addNextSibling" GUID='501008' Path="/Values/ConstructionCategory/BuildingList/Item[Building='102284']">
+    <Item>
+      <Building>2001000001</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Harbor category (After sailing ship pier) -->
+  <ModOp Type="addNextSibling" GUID='500149' Path="/Values/ConstructionCategory/BuildingList/Item[Building='101277']">
+    <Item>
+      <Building>2001000001</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Asset -->
+  <ModOp Type="add" Path="//Assets[Asset/Values/Standard/GUID='130248']">
+    <!-- New World Steam Shipyard -->
+    <Asset>
+      <BaseAssetGUID>1010521</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>2001000001</GUID>
+          <Name>New World Steam Shipyard</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Mesh/>
+        <Object />
+        <AmbientMoodProvider />
+        <Constructable/>
+        <Selection />
+        <Shipyard>
+          <AssemblyOptions>
+            <Item>
+              <Vehicle>1010062</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>100442</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>7076</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>100443</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>968</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>1537</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>100853</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>118718</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>720</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>15831</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>15835</Vehicle>
+            </Item>
+            <Item>
+              <Vehicle>15836</Vehicle>
+            </Item>
+          </AssemblyOptions>
+        </Shipyard>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>90000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>100</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>80</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Locked/>
+        <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>400</Amount>
+                <InactiveAmount>200</InactiveAmount>
+              </Item>
+              <Item>
+                <Product>1010367</Product>
+                <Amount>200</Amount>
+              </Item>
+            </Maintenances>
+            <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
+          </Maintenance>
+        <Infolayer />
+        <Attackable />
+        <Pausable />
+        <SoundEmitter />
+        <IncidentInfectable />
+        <FeedbackController />
+        <Industrializable />
+        <UpgradeList />
+        <LogisticNode />
+        <StreetActivation />
+        <QuestObject />
+        <Electrifiable />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Item Effects -->
+  <ModOp Type="add" GUID='192465,190696,112385,190694,191894,191896,192036,190695,190697,192460,132401,191895,190698,112383,112384,192463,192461,192462' Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>2001000001</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- Feedback Effects -->
+  <ModOp Type="add" GUID='142680' Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>2001000001</Building>
+    </Item>
+  </ModOp>
+
+  <!-- add to the asset pool -->
+  <ModOp Type="add" GUID='130099' Path="/Values/AssetPool/AssetList">
+    <Item>
+      <Asset>2001000001</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- add to the influence pool -->
+  <ModOp Type="add" GUID='190597,191365,191366,193876,193877,193878' Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>2001000001</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- add to the building pool -->
+  <ModOp Type="add" GUID='191501,190784,368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>2001000001</GUID>
+    </Item>
+  </ModOp>
+</ModOps>

@@ -1,0 +1,50 @@
+{
+  "Version": "1.0",
+  "ModID": "Khobs_NWShipyard",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "Category": {
+    "Chinese": null,
+    "English": "Gameplay",
+    "French": "Jouabilité",
+    "German": "Spielablauf",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "ModName": {
+    "Chinese": null,
+    "English": "NW Steam Shipyard",
+    "French": "Chantier Naval",
+    "German": null,
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "New World now have Steam Shipyard.",
+    "French": "Le Nouveau Monde a désormais un chantier naval à vapeur",
+    "German": null,
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues": null,
+  "DLCDependencies": [],
+  "CreatorName": "Khobs",
+  "CreatorContact": "",
+  "Image" : null
+}
